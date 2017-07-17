@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>A Website about Things</title>
+
+
+		<!-- slick -->
+		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" media="screen" href="css/mine.css">
+
+
+	</head>
+	<body>
+		<div id="page">
+			<header>
+				<a class="logo" title="Things" href="#">things</a>
+				<div class="hero">
+					<h1>Things are important.</h1>
+					<a class="btn" title="get aadvsdkjfaskldj" href="#">Know about things<span> of the world</span></a>
+					<div class="def">
+						<h2>things</h2>
+						<p>
+							<i>noun</i><br>
+								1. An object that one need not, cannot, or does not wish to give a specific name to.<br>
+								<br>2. An inanimate material object as distinct from a living sentient being.
+						</p>
+					</div>
+				</div>
+			</header>
+			<section class="main">
+				<div class="slidey">
+					<div>
+						<aside class="content why">
+							<h2>Why things?</h2>
+							<p>Because <a href="https://en.wikipedia.org/wiki/Consumerism">consumerism</a>, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>
+						</aside>
+					</div>
+					<div>
+						<aside class="content how">
+							<h2>How to do the&nbsp;thing?</h2>
+							<p>Lorem ipsum dolor sit amet, consect etuer adipiscing elit. <a href="http://codifydesign.com">Morbi commodo</a>, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.</p>
+						</aside>
+					</div>
+				</div>
+			</section>
+			<section class='googmap'>
+					<div class="content where">
+						<span><h2>Where are the things?</h2></span>
+					</div>
+				<div id="map"></div>
+			</section>
+			<section class="weather">
+				<div class="content">
+					<h2>How hot are the things?</h2>
+				</div>
+					<form action="javascript:getWeather()">
+						<div class='input-group'>
+							<input type="text" class="form-control" id="location" placeholder="Where is your thing?" name="location">
+							<div class="input-group-btn">
+								<button type="submit" class="btn btn-default">Get Forecast</button>
+							</div>
+						</div>
+					</form>
+				<div class="results">
+				</div>
+			</section>
+			<section class="testimonials">
+				<blockquote>
+					<p class="quote">I love things!</p>
+					<p class="credit"><strong>Jane</strong><br>
+				</blockquote>
+				<blockquote>
+					<p class="quote">A lot of things are better than me.</p>
+					<p class="credit"><strong>Peter</strong><br>
+				</blockquote>
+			</section>
+			<section class="newsletter">
+				<h3>Register for the Thing Newsletter!</h3>
+				<form class="form-horizontal">
+				  <div class="form-group">
+				    <label class="control-label col-sm-2" for="txt">First Name:</label>
+				    <div class="col-sm-10">
+				      <input type="text" class="form-control" id="txt" placeholder="Benjamin">
+				    </div>
+				  </div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="txt">Last Name:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="txt" placeholder="Grimm">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="email">Email:</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="email" placeholder="Enter email">
+						</div>
+					</div>
+				  <div class="form-group">
+				    <div class="col-sm-offset-1 col-sm-10">
+				      <button type="submit" class="btn btn-success">Submit</button>
+							<button type="reset" class="btn btn-danger">Reset</button>
+				    </div>
+				  </div>
+				</form>
+			</section>
+			<nav>
+				<img src="./images/menu.png">
+				<ul>
+					<li>
+						<a title="news" aria-haspopup="true" href="#">News</a>
+						<ul>
+							<li>
+								<a title="trending" href="#">Trending</a>
+							</li>
+							<li>
+								<a title="milestones" href="#">Milestones</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a title="facts" href="#" aria-haspopup="true">Facts</a>
+						<ul>
+							<li>
+								<a title="random fact" href="#">Random Fact</a>
+							</li>
+							<li>
+								<a title="atoz" href="#">A - Z</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a title="about" href="#" aria-haspopup="true">About</a>
+						<ul>
+							<li>
+								<a title="team" aria-haspopup="true" href="#">The Team</a>
+								<ul>
+									<li>
+										<a title="join" href="#">Join the Thing Team</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a title="idea" href="#">The Idea</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<footer>
+				&copy; Copyright 2017, things pte. ltd.<br>
+				<div class="content">
+					<a title="privacy" href="#">Privacy policy</a>
+					<a title="terms" href="#">Terms of the thing service</a>
+				</div>
+			</footer>
+		</div>
+
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.js"
+		  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		  crossorigin="anonymous"></script>
+		<script src="./js/application.js"></script>
+
+		<!-- slick -->
+		<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+		<!-- bootstrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApejepoIEkCMu8QL67kOsPcKrQ1hCphn8&callback=initMap" type="text/javascript"></script>
+
+
+	</body>
+</html>
