@@ -1,0 +1,28 @@
+{
+  "name": "things-site",
+  "description": "Accenture Training Project",
+  "main": "index.html",
+  "authors": [
+    "amelia.h.huang"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "things"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.6.0",
+    "google-maps": "^3.2.1",
+    "bootbox.js": "bootbox#^4.4.0"
+  }
+}
